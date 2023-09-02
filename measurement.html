@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Measurement</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .parent{
+            width: 400px;
+            height: 400px;
+
+            background-color: burlywood ;
+        }
+        .child{
+            width: 50%;
+            height: 50%;
+            border: 1px solid black;
+            background-color: violet ;
+        }
+        .second{
+            background-color: red ;
+        }
+        .cards{
+            margin: 10px;
+        }
+        .card{
+            border: 1px solid black;
+            padding: 5px;
+            display: inline-block;
+        }
+        .active{
+            border: 1px solid red;
+        }
+        /*We can use wither html or root. Its same*/
+        html{
+            font-size: 19px;
+        }
+        :root{
+            font-size: 19px;
+        }
+        @media(min-width:1900px){
+            body{
+                background-color: yellow;
+            }
+            :root{
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Measurement unit</h1>
+    <ul>
+        <li>px</li>
+        <li>%</li>
+    </ul>
+    <div class="parent">
+        <div class="child">
+            Child
+        </div>
+        <div class="child second">
+            Child
+        </div>
+    </div>
+    <div class="cards">
+        <div class="card">
+            Ram
+        </div>
+        <div class="card active">
+            Sam
+        </div>
+        <div class="card">
+            John
+        </div>
+    </div>
+</body>
+</html>
