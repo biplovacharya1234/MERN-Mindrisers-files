@@ -24,3 +24,19 @@ git config -- global user.name you "user name"
 <!-- for final upload -->
 git push
 <!-- and copy the code in next step given in the terminal -->
+
+<!-- u - new files/untracked files
+    a- added
+    m - modified -->
+
+<!-- to clone repo in your local device -->
+git clone "link of repo"
+
+<!-- how to download the updated code of repo -->
+git status 
+<!-- this is to check status -->
+git pull
+<!--  this is to pull new updated code from github repo to local device -->
+
+<!-- to open VS code from cmd  -->
+code .
