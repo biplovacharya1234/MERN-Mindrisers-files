@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: inherit;
+        }
+        .parent{
+            background-color: azure;
+            height: 400px;
+            width: 400px;
+            display: flex;
+            justify-content: start;
+            /* align-items: center; */
+            flex-wrap: wrap;/*if  not used all children will come in same row*/
+            align-content: center;/*used when there is multiple rows*/
+        }
+        /*flex-direction:column changes the direction form x axis to y axis*/
+        
+        .child{
+            background-color: antiquewhite;
+            height: 100px;
+            width: 100px;
+            border: 1px solid red;
+        }
+        ul{
+            border:1px solid red;
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+            
+        }
+        header{
+            border: 1px solid blue;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        a{
+            text-decoration: none;
+        }
+       h1{
+        border: 1px solid blueviolet;
+        color: green;
+        
+       } 
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Logo</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <ul>
+            <li><a href="#">Sign up</a></li>
+        </ul>
+    </header>
+    <div class="parent">
+        <div class="child">child-1</div>
+        <div class="child">child-2</div>
+        <div class="child">child-3</div>
+        <div class="child">child-4</div>
+        <div class="child">child-5</div>
+    </div>
+</body>
+</html>

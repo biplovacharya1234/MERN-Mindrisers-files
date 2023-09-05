@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>css position</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: inherit;
+        }
+        ul{
+            display: flex;
+            list-style: none;
+            gap : 1rem;
+            justify-content: center;
+            border: 1px solid red;
+        }
+        a{
+            text-decoration: none;
+        }
+        .box{
+            height: 30px;
+            width: 100px;
+            border: 1px solid red;
+        }
+        .static{
+            position: static;
+        }
+        .relative{
+            position: relative;
+            left: 50px;
+            top: 10px;
+        }
+        .absolute{
+            position: absolute;
+            top: 50px;
+            right:50px;
+        }
+        .fixed{
+            position: fixed;
+            background-color: antiquewhite;
+        }
+        .sticky{
+            position: sticky;
+            top: 10px;
+        }
+        body{
+            height: 200vh;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Css postions</h1>
+    <div class="static box">static</div>
+    <div class="relative box">relative</div>
+    <div class="absolute box">absolute</div>
+    <div class="fixed box">fixed</div>
+    <div class="sticky box">sticky</div>
+</body>
+</html>
