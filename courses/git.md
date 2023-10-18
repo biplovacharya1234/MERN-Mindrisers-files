@@ -37,6 +37,6 @@ git status
 <!-- this is to check status -->
 git pull
 <!--  this is to pull new updated code from github repo to local device -->
-
 <!-- to open VS code from cmd  -->
 code .
+blah blah
